@@ -44,10 +44,11 @@ public class ExcelitemsuploadexcelPage extends PageBase
 		WebElement crmAccountId;
 		public void selectcustomrrname(String customrrname)
 		{
-			if (customrrname.contains("اختر العميل")) 
+			if (crmAccountId.isEnabled()) 
 			{
 				SelectBytext(crmAccountId, customrrname);
-			} else 
+			} 
+			else 
 			{
 				clickbutton(btnSave);
 
@@ -56,7 +57,7 @@ public class ExcelitemsuploadexcelPage extends PageBase
 			
 		}
 	//تحميل ملف الاكسل
-	@FindBy(id="fileUplaodExcelFile")
+	@FindBy(css="span.input-group-btn")
 	WebElement fileUplaodExcelFile;
 	public void clickfileuploadexcel()
 	{

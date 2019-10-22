@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\hesham\AppData\Local\Temp\testng-eclipse-155033109\testng-customsuite.xml</span>
+                    <span>C:\Users\hesham\AppData\Local\Temp\testng-eclipse--311166018\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,15 +128,15 @@
                   <a name="Saveuploadexcelfile">
                   </a> <!-- Saveuploadexcelfile -->
                   <span class="method-name">Saveuploadexcelfile</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=77.0.3865.120)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;TESTINGPC&apos;, ip: &apos;10.8.6.71&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\hesham\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 442e2154314abb8bd046799a3ec0ad2f
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\hesham\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 933bfcbb33dd399a5d2f3edcfdbbbbda
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -182,7 +182,7 @@ Session ID: 442e2154314abb8bd046799a3ec0ad2f
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hesham\AppData\Local\Temp\testng-eclipse-155033109\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hesham\AppData\Local\Temp\testng-eclipse--311166018\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -235,12 +235,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Saveuploadexcelfile')
 data.setCell(0, 2, 'TestCases.ExcelitemsuploadexcelTC')
-data.setCell(0, 3, 300028);
+data.setCell(0, 3, 12);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 12 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -275,11 +275,13 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Saveuploadexcelfile</span>
-                <span class="method-start">255683 ms</span>
+                <span class="method-start">154651 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ScreenshOnFailure([TestResult name=Saveuploadexcelfile status=FAILURE method=ExcelitemsuploadexcelTC.Saveuploadexcelfi...)</span>
-                <span class="method-start">555715 ms</span>
+                <span class="method-start">154667 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
