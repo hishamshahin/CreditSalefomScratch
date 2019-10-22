@@ -1,0 +1,14 @@
+
+
+<suite name="TESTSuite" parallel="YES">
+	<test name="AllTscforcustomer">
+		<classes>
+			<class name="TestCases.RegisterItemTC" />
+			<class name="TestCases.AddsubuserTC" />
+			<class name="TestCases.CheckallLinksTC" />
+			<class name="TestCases.UploadfileinRegisteritemTC" />
+			<class name="TestCases.DeleteitemTC" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

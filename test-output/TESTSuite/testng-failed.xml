@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TESTSuite]">
+  <test thread-count="5" name="AllTscforcustomer(failed)">
+    <classes>
+      <class name="TestCases.DeleteitemTC">
+        <methods>
+          <include name="ScreenshOnFailure"/>
+          <include name="Startdriver"/>
+          <include name="Userupdateitem"/>
+        </methods>
+      </class> <!-- TestCases.DeleteitemTC -->
+      <class name="TestCases.UploadfileinRegisteritemTC">
+        <methods>
+          <include name="ScreenshOnFailure"/>
+          <include name="uploadfile"/>
+          <include name="Startdriver"/>
+        </methods>
+      </class> <!-- TestCases.UploadfileinRegisteritemTC -->
+      <class name="TestCases.AddsubuserTC">
+        <methods>
+          <include name="ScreenshOnFailure"/>
+          <include name="Startdriver"/>
+          <include name="addsubuser"/>
+        </methods>
+      </class> <!-- TestCases.AddsubuserTC -->
+      <class name="TestCases.RegisterItemTC">
+        <methods>
+          <include name="ScreenshOnFailure"/>
+          <include name="Startdriver"/>
+          <include name="Registeritem"/>
+        </methods>
+      </class> <!-- TestCases.RegisterItemTC -->
+    </classes>
+  </test> <!-- AllTscforcustomer(failed) -->
+</suite> <!-- Failed suite [TESTSuite] -->
