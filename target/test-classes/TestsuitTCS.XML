@@ -1,13 +1,17 @@
 
 
-<suite name="TESTSuite" parallel="YES">
-	<test name="AllTscforcustomer">
+<suite name="TESTSuite" parallel="YES" >
+	<test name="AllTcforcustomer">
 		<classes>
 			<class name="TestCases.RegisterItemTC" />
-			<class name="TestCases.AddsubuserTC" />
-			<class name="TestCases.CheckallLinksTC" />
+			<class name="TestCases.PrintItemploisaTC" /> 
 			<class name="TestCases.UploadfileinRegisteritemTC" />
-			<class name="TestCases.DeleteitemTC" />
+			<class name="TestCases.AddsubuserTC" />				
+			<class name="TestCases.ReportcustomerIteminquiryTC" />
+			<class name="TestCases.CheckisbranschsubuserTC" />
+			<class name="TestCases.BillingCustomerTC" />
+			<class name="TestCases.CheckallLinksTC" />
+			<class name="TestCases.IteminquiryTC" />	
 
 		</classes>
 	</test> <!-- Test -->

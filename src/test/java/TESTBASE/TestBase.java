@@ -7,9 +7,13 @@
 // MODIFIED BY   : 
 // MODIFIED DATE : 
 package TESTBASE;
+import java.util.HashMap;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -26,18 +30,32 @@ public class TestBase
 	Helper helperforscreenshots;
 	public static WebDriver driver ;
 	mainloginPage loginobj;
+	
+	
+	// download file from chrome
+		public static String downloadPath = System.getProperty("user.dir")+"\\Downloads";
+
+		public static ChromeOptions DownloadchromeOption() 
+		{
+			ChromeOptions options = new ChromeOptions();
+			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+			chromePrefs.put("profile.default.content_settings.popups", 0);
+			chromePrefs.put("download.default_directory", downloadPath);
+			options.setExperimentalOption("prefs", chromePrefs);
+			options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			return options ; 		
+		}
 
 	@BeforeSuite
 	@Parameters({"browser"})
 	public void Startdriver( @Optional("chrome") String browsername) 
-
 	{
 		if (browsername.equalsIgnoreCase("chrome"))
 		{
 			
 			System.setProperty
 			("webdriver.chrome.driver", System.getProperty("user.dir")+ "\\Drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(DownloadchromeOption());
 			
 
 		}
@@ -59,8 +77,8 @@ public class TestBase
 		
 		try {
 			loginobj= new mainloginPage(driver);
-			//loginobj.login("Cust_1010358479","V5ZOE");
-			loginobj.login("Amdaheem","Permi$$ion@SP");
+			loginobj.login("Cust_1010142007","Q87J6");
+			//loginobj.login("Amdaheem","Permi$$ion@SP");
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			wait.until(ExpectedConditions.urlToBe("http://10.10.110.44:8080/"));
 			
@@ -71,6 +89,8 @@ public class TestBase
 		
 		
 	}
+	
+	
 
 
 

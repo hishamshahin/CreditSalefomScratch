@@ -12,13 +12,16 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -99,6 +102,22 @@ public class PageBase
 		
 	}
 	
+	public void EnterKey (WebElement element)
+	{
+		element.sendKeys(Keys.ENTER);
+	}
+	
+	public void RETURNKey (WebElement element)
+	{
+		element.sendKeys(Keys.RETURN);
+	}
+	
+	public void tabKey (WebElement element)
+	{
+		element.sendKeys(Keys.TAB);
+	}
+	
+	
 	
 	public void hovermainmenu(WebElement main,WebElement submenu) 
 	{
@@ -170,6 +189,8 @@ public class PageBase
 		 robot.delay(3000);
 		 Thread.sleep(1000);
 	 } 
+	
+	
 
 
 }

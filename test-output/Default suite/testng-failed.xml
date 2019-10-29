@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.ExcelitemsuploadexcelTC">
+      <class name="TestCases.IteminquiryTC">
         <methods>
-          <include name="Saveuploadexcelfile"/>
           <include name="ScreenshOnFailure"/>
           <include name="Startdriver"/>
+          <include name="searconitemandprint"/>
         </methods>
-      </class> <!-- TestCases.ExcelitemsuploadexcelTC -->
+      </class> <!-- TestCases.IteminquiryTC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

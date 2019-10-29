@@ -16,7 +16,7 @@ import com.github.javafaker.Faker;
 import Pages.Addsubuserpage;
 import TESTBASE.TestBase;
 
-public class Checkisbranschsubuser extends TestBase
+public class CheckisbranschsubuserTC extends TestBase
 {
 	Addsubuserpage addsubuserpageobj;
 	Faker faker= new Faker();

@@ -50,9 +50,11 @@ public class PrintItemploisaTC extends TestBase
 				Thread.sleep(4000);
 				
 				Registerpageobj.clickupprintItemallitemBTN1();
+				Thread.sleep(2000);
 				driver.navigate().refresh();
 				Thread.sleep(2000);
 				Registerpageobj.clickprintminiItemallitemBTN1();
+				Thread.sleep(2000);
 				driver.navigate().refresh();
 		
 		

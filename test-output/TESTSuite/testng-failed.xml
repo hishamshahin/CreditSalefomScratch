@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TESTSuite]">
-  <test thread-count="5" name="AllTscforcustomer(failed)">
+  <test thread-count="5" name="AllTcforcustomer(failed)">
     <classes>
-      <class name="TestCases.DeleteitemTC">
+      <class name="TestCases.BillingCustomerTC">
         <methods>
           <include name="ScreenshOnFailure"/>
-          <include name="Startdriver"/>
-          <include name="Userupdateitem"/>
-        </methods>
-      </class> <!-- TestCases.DeleteitemTC -->
-      <class name="TestCases.UploadfileinRegisteritemTC">
-        <methods>
-          <include name="ScreenshOnFailure"/>
-          <include name="uploadfile"/>
+          <include name="Searchandpritbillbarcode"/>
           <include name="Startdriver"/>
         </methods>
-      </class> <!-- TestCases.UploadfileinRegisteritemTC -->
+      </class> <!-- TestCases.BillingCustomerTC -->
       <class name="TestCases.AddsubuserTC">
         <methods>
           <include name="ScreenshOnFailure"/>
@@ -24,13 +17,48 @@
           <include name="addsubuser"/>
         </methods>
       </class> <!-- TestCases.AddsubuserTC -->
-      <class name="TestCases.RegisterItemTC">
+      <class name="TestCases.CheckisbranschsubuserTC">
         <methods>
           <include name="ScreenshOnFailure"/>
           <include name="Startdriver"/>
+          <include name="addsubuser"/>
+        </methods>
+      </class> <!-- TestCases.CheckisbranschsubuserTC -->
+      <class name="TestCases.ReportcustomerIteminquiryTC">
+        <methods>
+          <include name="searchreportitemibquiry"/>
+          <include name="ScreenshOnFailure"/>
+          <include name="Startdriver"/>
+        </methods>
+      </class> <!-- TestCases.ReportcustomerIteminquiryTC -->
+      <class name="TestCases.CheckallLinksTC">
+        <methods>
+          <include name="ScreenshOnFailure"/>
+          <include name="Startdriver"/>
+          <include name="testBrokenLinks"/>
+        </methods>
+      </class> <!-- TestCases.CheckallLinksTC -->
+      <class name="TestCases.PrintItemploisaTC">
+        <methods>
+          <include name="Printpolisa"/>
+          <include name="ScreenshOnFailure"/>
+          <include name="Startdriver"/>
+        </methods>
+      </class> <!-- TestCases.PrintItemploisaTC -->
+      <class name="TestCases.UploadfileinRegisteritemTC">
+        <methods>
+          <include name="uploadfile"/>
+          <include name="ScreenshOnFailure"/>
+          <include name="Startdriver"/>
+        </methods>
+      </class> <!-- TestCases.UploadfileinRegisteritemTC -->
+      <class name="TestCases.RegisterItemTC">
+        <methods>
+          <include name="ScreenshOnFailure"/>
           <include name="Registeritem"/>
+          <include name="Startdriver"/>
         </methods>
       </class> <!-- TestCases.RegisterItemTC -->
     </classes>
-  </test> <!-- AllTscforcustomer(failed) -->
+  </test> <!-- AllTcforcustomer(failed) -->
 </suite> <!-- Failed suite [TESTSuite] -->
