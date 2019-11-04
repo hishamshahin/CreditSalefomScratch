@@ -155,6 +155,15 @@ public class Addsubuserpage extends PageBase
 		 clickbutton(deleteSubUserok);
 	 }
 	 
+	 @FindBy(xpath="//*[@id=\"site-navbar-collapse\"]/ul[2]/li[10]/a")
+	 public WebElement  logout;
+	 
+	 public void clicklogout() throws InterruptedException
+	 {
+		 Thread.sleep(3000);
+		 clickbutton(logout);
+		 
+	 }
 	 
 	 
 	 

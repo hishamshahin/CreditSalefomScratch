@@ -25,7 +25,7 @@ public class RegisterItemTC extends TestBase
 
 		// دايما بناخد اويجيكت من الكلاس ال فيها البيج اوبكيت  للعناصر الصفحة
 		///call method from test base common method, new object from class page of elements
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
 		Registerpageobj= new Pages.Registeritempage(driver);
 		
 		Faker filefaker = new Faker();

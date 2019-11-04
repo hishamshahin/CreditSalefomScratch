@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23341" started-at="2019-10-29T10:48:08Z" finished-at="2019-10-29T10:48:31Z">
+  <suite name="Default suite" duration-ms="54555" started-at="2019-11-04T09:47:05Z" finished-at="2019-11-04T09:47:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23341" started-at="2019-10-29T10:48:08Z" finished-at="2019-10-29T10:48:31Z">
-      <class name="TestCases.IteminquiryTC">
-        <test-method status="PASS" signature="Startdriver(java.lang.String)[pri:0, instance:TestCases.IteminquiryTC@57baeedf]" name="Startdriver" is-config="true" duration-ms="32465" started-at="2019-10-29T10:47:35Z" finished-at="2019-10-29T10:48:08Z">
+    <test name="Default test" duration-ms="54555" started-at="2019-11-04T09:47:05Z" finished-at="2019-11-04T09:47:59Z">
+      <class name="TestCases.AddsubuserTCwithLoadProperiies">
+        <test-method status="PASS" signature="Startdriver(java.lang.String)[pri:0, instance:TestCases.AddsubuserTCwithLoadProperiies@57a48985]" name="Startdriver" is-config="true" duration-ms="19333" started-at="2019-11-04T09:46:45Z" finished-at="2019-11-04T09:47:05Z">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Startdriver -->
-        <test-method status="PASS" signature="searconitemandprint()[pri:0, instance:TestCases.IteminquiryTC@57baeedf]" name="searconitemandprint" duration-ms="22924" started-at="2019-10-29T10:48:08Z" finished-at="2019-10-29T10:48:31Z">
+        <test-method status="PASS" signature="addsubuser()[pri:0, instance:TestCases.AddsubuserTCwithLoadProperiies@57a48985]" name="addsubuser" duration-ms="54526" started-at="2019-11-04T09:47:05Z" finished-at="2019-11-04T09:47:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searconitemandprint -->
-        <test-method status="PASS" signature="ScreenshOnFailure(org.testng.ITestResult)[pri:0, instance:TestCases.IteminquiryTC@57baeedf]" name="ScreenshOnFailure" is-config="true" duration-ms="405" started-at="2019-10-29T10:48:31Z" finished-at="2019-10-29T10:48:31Z">
+        </test-method> <!-- addsubuser -->
+        <test-method status="PASS" signature="ScreenshOnFailure(org.testng.ITestResult)[pri:0, instance:TestCases.AddsubuserTCwithLoadProperiies@57a48985]" name="ScreenshOnFailure" is-config="true" duration-ms="0" started-at="2019-11-04T09:47:59Z" finished-at="2019-11-04T09:47:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searconitemandprint status=SUCCESS method=IteminquiryTC.searconitemandprint()[pri:0, instance:TestCases.IteminquiryTC@57baeedf] output={null}]]]>
+                <![CDATA[[TestResult name=addsubuser status=SUCCESS method=AddsubuserTCwithLoadProperiies.addsubuser()[pri:0, instance:TestCases.AddsubuserTCwithLoadProperiies@57a48985] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshOnFailure -->
-      </class> <!-- TestCases.IteminquiryTC -->
+      </class> <!-- TestCases.AddsubuserTCwithLoadProperiies -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

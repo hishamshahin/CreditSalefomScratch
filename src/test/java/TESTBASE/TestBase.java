@@ -8,6 +8,7 @@
 // MODIFIED DATE : 
 package TESTBASE;
 import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +18,9 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -75,12 +78,18 @@ public class TestBase
 		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.navigate().to(Url[1]);
 		
+		
 		try {
-			loginobj= new mainloginPage(driver);
-			loginobj.login("Cust_1010142007","Q87J6");
+			
+			//loginobj= new mainloginPage(driver);
+			//loginobj.login("Cust_1010358479","V5ZOE");
 			//loginobj.login("Amdaheem","Permi$$ion@SP");
+			// ExPLISIT WAIT
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			wait.until(ExpectedConditions.urlToBe("http://10.10.110.44:8080/"));
+			//IMPLICIT WAIT
+			//driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			
 		} catch (Exception e) {
 			System.out.println("login issue"+ e.getCause());
@@ -94,7 +103,7 @@ public class TestBase
 
 
 
-	/*@AfterSuite
+	/*@AfterClass
 	public void StopDriver() throws InterruptedException
 	{
 		Thread.sleep(5000);
@@ -112,18 +121,18 @@ public class TestBase
 			Helper.captureScreenshot(driver, Result.getName());
 		}
 		
-		else if (Result.getStatus()==ITestResult.SKIP) 
+		/*else if (Result.getStatus()==ITestResult.SKIP) 
 		{
-			System.out.println("taking Sceen on skip..");
+			//System.out.println("taking Sceen on skip..");
 			//helperforscreenshots.captureScreenshot(driver, Result.getName());
 			Helper.captureScreenshot(driver, Result.getName());
 		}
 		
 		else if (Result.getStatus()==ITestResult.SUCCESS)
 		{
-			System.out.println("taking Sceen on success..");
+			//System.out.println("taking Sceen on success..");
 			Helper.captureScreenshot(driver, Result.getName());
-		}
+		}*/
 	}
 
 }
